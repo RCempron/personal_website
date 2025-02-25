@@ -217,7 +217,7 @@ h6 {
   list-style: none;
   padding: 0 0 20px 0;
   margin: 0;
-  width: 140px;
+  width: 160px;
 }
 
 .navmenu a,
@@ -250,12 +250,12 @@ h6 {
 @media (min-width: 992px) {
   .navmenu a,
   .navmenu a:focus {
-    max-width: 56px;
+    max-width: 100%; /* Ensure full width to prevent text wrapping */
   }
 
   .navmenu a span,
   .navmenu a:focus span {
-    display: none;
+    display: inline-block; /* Always keep the text visible */
   }
 }
 
@@ -1469,3 +1469,9 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
+hr {
+  border: none; /* Removes the default border */
+  height: 3px; /* Thickness of the line */
+  background-color: #0c004e; /* Color of the line */
+  margin: 20px 0; /* Spacing above and below */
+}
